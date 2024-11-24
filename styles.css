@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+/* General styles for desktop and larger screens */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 19.55px;
+    line-height: 1.5;
+    margin: 0 0 24px;
+}
+
+.container {
+    max-width: 600px;  /* Set a max-width for large screens */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+
+input {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;                    /* Set the font size */
+    color: #333;                        /* Set the text color */
+}
+
+input::placeholder {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #888;
+    font-style: italic;              /* Optional: Make the placeholder text italic */
+}
+
+/* Vendor prefixes for older browsers */
+input::-webkit-input-placeholder {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #888;
+    font-style: italic;
+}
+
+input::-moz-placeholder {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #888;
+    font-style: italic;
+}
+
+input:-ms-input-placeholder {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #888;
+    font-style: italic;
+}
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 30px; 
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: #504c4c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7C7C7A;
+}
+
+.result {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #504c4c;
+}
+
+ 
+form {
+    font-family: Georgia, "Times New Roman", Times, serif;
+	display: flex;
+    flex-direction: column;
+}
+
+/* Mobile responsiveness */
+@media (max-width : 263px ){
+    body {
+        margin: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;  /* Remove max-width for small screens */
+    }
+}
+  
+ 
